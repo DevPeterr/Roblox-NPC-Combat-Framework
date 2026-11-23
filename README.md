@@ -57,6 +57,10 @@ classDiagram
 
 The combat system handles both player vs player and player vs NPC combat. It includes hit detection, damage handling, projectiles, projectile abilities, blocking, parrying, dashing and player state management.
 
+## Projectiles
+
+Projectiles and projectile abilities work under a queue data structure, the 3 abilities (enlarge, split and homing) affect the first thrown projectiles when the ability is activated, so if projectile 1 is thrown then projectile 2 afterwards and  the user activates 2 abilities, the first ability activated will affect projectile 1 and the second affects 2 and so on.
+
 ## Used
 - Luau
 - Roblox Studio as my game engine
